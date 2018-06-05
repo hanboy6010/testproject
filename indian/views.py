@@ -3,5 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the indian index.")
+    return render(request, 'indian/index.html', {})
 
+def post_list(request):
+    return render(request, 'indian/post_list.html', {})

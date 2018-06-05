@@ -25,7 +25,7 @@ SECRET_KEY = 'fx=_anfyma((#zu=nftq$#ftf))o!fss)xf3m9j=cr(b!yodqk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.testproject.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'ju6579.pythonanywhere.com']
 
 
 # Application definition
