@@ -5,12 +5,13 @@
     <title>DaeraJomSibalom</title>
 </head>
 <body>
-    <p>this is test page</p>
-    <p>I don`t want do this</p>
-    <strong>AAAAAAAAAAAAAAAAAA</strong>
+    {% if game.regame %}
     <h1>Player1  game : {{game.player1money}}</h1>
     <h1> Banker  game : {{game.bankerMoney}}</h1>
     <h1>Player2  game : {{game.player2money}}</h1>
+    {% else %}
+    <h1>{{game.waitForRequest}}</h1>
+    {% endif %}
     <p><a href="{%url 'index'%}">back</a></p>
 </body>
 </html>

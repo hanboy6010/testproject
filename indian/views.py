@@ -8,3 +8,5 @@ def index(request):
 
 def indian(request):
     return render(request, 'indian/indian.html', {'game': GameSet})
+
+

@@ -3,9 +3,10 @@ from django.utils import timezone
 
 # Create your models here.
 class GameSet(models.Model):
-    player1money = models.PositiveIntegerField(default=100000)
-    player1CardNumber = models.PositiveIntegerField()
-    player2money = models.PositiveIntegerField(default=100000)
-    player2CardNumber = models.PositiveIntegerField()
-    bankerMoney = models.PositiveIntegerField(default=0)
-    regame = models.BooleanField(default=True)
+    player1money = 100000
+    player1CardNumber = 0
+    player2money = 100000
+    player2CardNumber = 0
+    bankerMoney = 0
+    regame = False
+    waitForRequest = "Please, wait Other Player"
