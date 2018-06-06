@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="refresh"
+    content="1">
     <title>DaeraJomSibalom</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
     {% else %}
     <h1>{{game.waitForRequest}}</h1>
     <h1>{{game.player_id}}</h1>
+    <h1>{{request.online_now}}</h1>
     {% endif %}
     <p><a href="{%url 'index'%}">back</a></p>
 </body>
