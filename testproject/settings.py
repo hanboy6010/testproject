@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -31,13 +30,13 @@ ALLOWED_HOSTS = ['127.0.0.1', 'ju6579.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'indian',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'indian'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +120,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Auth settings
+LOGIN_REDIRECT_URL = '/indian/'
