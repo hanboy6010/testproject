@@ -7,4 +7,4 @@ def index(request):
     return render(request, 'indian/index.html', {})
 
 def indian(request):
-    return render(request, 'indian/post_list.html', {})
+    return render(request, 'indian/indian.html', {})
