@@ -2,7 +2,7 @@
 
   <!-- 로그인 되어있는 경우 -->
   {% if user.is_active %}
-  <h2> Welcome, {{user.username}} </h2>
+  <h2> Welcome, {{user.username}, color: #FCA205;} </h2>
   <a href="{% url 'logout' %}">로그아웃</a>
 
   <!-- 로그인 되어있지 않은 경우 -->
